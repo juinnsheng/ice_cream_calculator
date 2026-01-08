@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ice Cream Category Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Ice Cream Category Calculator</h1>
+        <p class="subtitle">Japanese Ice Cream Classification System</p>
+
+        <form id="iceCreamForm">
+            <div class="input-group">
+                <label for="milkSolidsNotFat">Milk Solids-Not-Fat (A) %</label>
+                <input type="number" id="milkSolidsNotFat" name="A" min="0" max="100" step="0.1" placeholder="Enter value (0-100)" required>
+            </div>
+
+            <div class="input-group">
+                <label for="milkFat">Milk Fat (B) %</label>
+                <input type="number" id="milkFat" name="B" min="0" max="100" step="0.1" placeholder="Enter value (0-100)" required>
+            </div>
+
+            <button type="submit" class="btn">Calculate Category</button>
+        </form>
+
+        <div id="result" class="result"></div>
+
+        <div class="info-box">
+            <h3>Categories</h3>
+            <ul>
+                <li><strong>Ice Cream:</strong> ≥15% milk solids & ≥8% milk fat</li>
+                <li><strong>Ice Milk:</strong> ≥10% milk solids & ≥3% milk fat</li>
+                <li><strong>Lacto Ice:</strong> ≥3% milk solids</li>
+                <li><strong>Flavored Ice:</strong> <3% milk solids</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
